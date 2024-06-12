@@ -40,16 +40,23 @@ function lalala () {
   
   // console.log(lalala()); // * 2024-06-12 + 시간 나옴
 let test = lalala();
+console.log(typeof(test));
+console.dir(test);
 console.log(test);  // * 2024-06-12 + 시간 나옴
 
 let innerFunc = () => {
   // if(new Date(test) === 12 ) {
   // if(test === new Date("2024-06-12")) {
-  if(test === "2024-06-12") {
-    return "오우 12일이구나"    
-  } else { "잉 오늘 12일 아닌뎀"
-
+  // if(test === "2024-06-12") {
+if(test.getFullYear === 2024) {
+  if(test.getMonth === 6) {
+    if(test.getDate === 13) {
+      return "오우 13일이구나"    
+    } else {
+      "잉 오늘 3일 아닌뎀"
+    }
   }
+}
 }
 
 console.log(innerFunc());
