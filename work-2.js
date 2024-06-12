@@ -20,9 +20,21 @@ if(obj.age > 20) {
 // * inner func은 helper 함수이다.
 
 
+
+let anotherFunc = () => {
+  if(obj.job === "미남") {
+    return "이 양반 문제있네";
+  } else {
+    return "진실을 알고 있다";
+    }
+  }
+
+
+
+
 return `
 <h1>${obj.name}</h1>
 <h2>${innerFunc()}}</h2>
-
+<h3>${anotherFunc()}}</h3>
 `;
 }
