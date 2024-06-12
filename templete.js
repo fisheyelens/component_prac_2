@@ -1,16 +1,19 @@
-const tagComponent = (tagName, textNode) => {
-  return `<${tagName}>${textNode}</${tagName}>`;
-}
+// * 미션을 위해 주어진 예제 코드
 
-const container = () => {
-  return `
-    ${tagComponent('header', '헤더부분')}
-    ${tagComponent('main', '메인부분')}
-    ${tagComponent('footer', '푸터부분')}
-  `;
-}
+// const tagComponent = (tagName, textNode) => {
+//   return `<${tagName}>${textNode}</${tagName}>`;
+// }
 
-console.log(container());
+// const container = () => {
+//   return `
+//     ${tagComponent('header', '헤더부분')}
+//     ${tagComponent('main', '메인부분')}
+//     ${tagComponent('footer', '푸터부분')}
+//   `;
+// }
+
+// console.log(container());
+
 // 여기 까지의 결과는 :
 // <header>헤더부분</header>
 // <main>메인부분</main>
@@ -26,5 +29,23 @@ console.log(container());
 
 // * "(오전)이라면 A방식"
 // * "(오후)라면 B방식"
+
+// 여기서부터 미션 시작~
+
+const tagComponent = (tagName, textNode) => {
+  return `<${tagName}>${textNode}</${tagName}>`;
+}
+
+const container = () => {
+  return `
+    ${tagComponent('header', '헤더부분')}
+    ${tagComponent('main', '메인부분')}
+    ${tagComponent('footer', '푸터부분')}
+  `;
+}
+
+// * 날짜 구하는 함수
+const now = Date.now();
+new Date(now);
 
 
