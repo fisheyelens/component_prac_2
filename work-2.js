@@ -1,1 +1,12 @@
-console.log("This is work-2.js");
+const component = () => {
+let obj = {};
+
+
+let innerFunc = () => {
+
+}
+
+
+return "some string";
+
+}
