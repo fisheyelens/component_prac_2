@@ -33,16 +33,37 @@
 
 
 function lalala () {
+  
+  const year = Date.getFullYear;
+  const month = Date.getMonth;
+  const date = Date.getDate;
 
-  return new Date; 
+  return [year, month, date];
+  //let hmm = 
+  // return new Date(year,month[date]); 
+  // return new Date(getFullYear()); 
+  //return new Date(hmm); 
   
   }
-  
+
+  console.log("lalala()의 값은 : ", lalala());
+  // let num = Number(obj); 주어온 힌트 
   // console.log(lalala()); // * 2024-06-12 + 시간 나옴
+
+  // ! obj 타입에서 number 타입으로 바꾸기 작업 필요!
+
 let test = lalala();
-console.log(typeof(test));
+
+let value = Number("123");
+
+let num = Number(test);
+console.log("num 의 타입은 : ", typeof num, "num의 값은: ", num);
+console.log(typeof(test));  // * object 로 나온다.
 console.dir(test);
 console.log(test);  // * 2024-06-12 + 시간 나옴
+console.log("lalala 의 타입은 : " , typeof lalala);
+console.log("lalala()의 타입은 : ", typeof lalala());
+console.log("이것은:", lalala());
 
 let innerFunc = () => {
   // if(new Date(test) === 12 ) {
