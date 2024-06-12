@@ -1,9 +1,11 @@
-const component = () => {
+const component = (age,job) => {
 let obj = {
   name : "백지원",
-  age : 31,
-  job : "학생"
+  age : age,
+  job : job
 };
+// * age와 job 으로 수정함으로 동적으로 변함
+// * 유연해짐
 // * 우선은 생성자 함수 제외 하고 실습
 
 
