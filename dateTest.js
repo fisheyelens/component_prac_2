@@ -33,12 +33,13 @@
 
 
 function lalala () {
-  
-  const year = Date.getFullYear;
-  const month = Date.getMonth;
-  const date = Date.getDate;
+const today = new Date();
 
-  return [year, month, date];
+  const year = today.getFullYear();
+  const month = today.getMonth();
+  const date = today.getDate();
+
+  return [year, month+1, date];
   //let hmm = 
   // return new Date(year,month[date]); 
   // return new Date(getFullYear()); 
@@ -69,9 +70,9 @@ let innerFunc = () => {
   // if(new Date(test) === 12 ) {
   // if(test === new Date("2024-06-12")) {
   // if(test === "2024-06-12") {
-if(test.getFullYear === 2024) {
-  if(test.getMonth === 6) {
-    if(test.getDate === 13) {
+if(test[0] === 2024) {
+  if(test[1] === 6) {
+    if(test[2] === 13) {
       return "오우 13일이구나"    
     } else {
       "잉 오늘 3일 아닌뎀"
@@ -80,4 +81,4 @@ if(test.getFullYear === 2024) {
 }
 }
 
-console.log(innerFunc());
+console.log("inner펑션의 값은", innerFunc());
