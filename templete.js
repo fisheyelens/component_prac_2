@@ -44,8 +44,14 @@ const container = () => {
   `;
 }
 
-// * 날짜 구하는 함수
+// * 날짜 구하는 변수
 const now = Date.now();
 new Date(now);
 
+// * 날짜 구하는 함수 만들기
+function nowDate () {
+return Date.now()
+}
+
+console.log(nowDate());
 
