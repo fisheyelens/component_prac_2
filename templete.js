@@ -10,6 +10,13 @@ const container = () => {
   `;
 }
 
+console.log(container());
+// 여기 까지의 결과는 :
+// <header>헤더부분</header>
+// <main>메인부분</main>
+// <footer>푸터부분</footer>
+
+
 // * 미션 : 위의 코드를 사용해서
 // * 1. 날짜를 구해서
 // * 2. 함수에 적용
@@ -19,3 +26,5 @@ const container = () => {
 
 // * "(오전)이라면 A방식"
 // * "(오후)라면 B방식"
+
+
