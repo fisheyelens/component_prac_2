@@ -56,7 +56,7 @@ function lalala () {
   const date = today.getDate();
   
   // return [year, month+1, date];
-  return year, month, date;
+  return {year, month, date};
   
   
   //let hmm = 
@@ -66,9 +66,13 @@ function lalala () {
   
   }
   
+  let what = lalala();
     // console.log("lalala()의 값은 : ", lalala());
     // console.log("lalala의 타입은 : ", typeof lalala, "lalala의 값은 : ", lalala); // lalala의 타입은 :  function . lalala의 값은 :  [Function: lalala]
+    console.log("what의 type은 : ", typeof what, "what의 값은 : ", what);
     console.log("lalala의 타입은 : ", typeof lalala(), "lalala의 값은 : ", lalala()); // lalala의 타입은 :  number . lalala의 값은 :  13
+    
+
   
   
   let test = lalala();
@@ -78,7 +82,7 @@ function lalala () {
   
 
   // * 얘는 해봤는데, 이미 test가 number형인데 굳이 또 number 화 시킬 필요가 없음.
-  // let num = Number(test);
+  let num = Number(test);
   // console.log("num 의 타입은 : ", typeof num, "num의 값은: ", num); // num 의 타입은 :  number num의 값은:  13
   // console.log("test 의 넘버화 타입은 : ", typeof(test), "test 넘버화의 값은 : ", test);  // number
   // console.dir(test);
@@ -93,28 +97,28 @@ function lalala () {
     // if(test === new Date("2024-06-12")) {
     // if(test === "2024-06-12") {
 
-    // * 요것도 해보고
-  // if(test.getFullYear === 2024) {
-  //   if(test.getMonth === 6) {
-  //     if(test.getDate === 13) {
+    // * 1 요것도 해보고
+  // if(num.getFullYear === 2024) {
+  //   if(num.getMonth === 6) {
+  //     if(num.getDate === 13) {
 
-  // * 요것도 해보고
-  // if(test.year === 2024) {
-  //   if(test.month === 6) {
-  //     if(test.date === 13) {
+  // * 2 요것도 해보고
+  if(num.year === 2024) {
+    if(num.month === 6) {
+      if(num.date === 13) {
 
-// * 요것도 해보고
+// * 3 요것도 해보고
         // if(lalala.year === 2024) {
         //   if(lalala.month === 6) {
         //     if(lalala.date === 13) {
 
-// * 요것도 해보고
-        if(lalala.getFullYear === 2024) {
-          if(lalala.getMonth === 6) {
-            if(lalala.getDate === 13) {
+// * 4 요것도 해보고
+        // if(lalala.getFullYear === 2024) {
+        //   if(lalala.getMonth === 6) {
+        //     if(lalala.getDate === 13) {
 
 
-// ! 모두 undefined 가 뜬닽
+// ! 모두 undefined 가 뜬다
 
         return "오우 13일이구나"    
       } else {
