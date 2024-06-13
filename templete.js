@@ -96,11 +96,11 @@ function lalala () {
     // * 요것도 해보고
   // if(test.getFullYear === 2024) {
   //   if(test.getMonth === 6) {
-  //     if(test.getDate === 13) {
+      if(test.getDate === 13) {
 
   // * 요것도 해보고
-  // if(test.year === 2024) {
-  //   if(test.month === 6) {
+  if(test.year === 2024) {
+    if(test.month === 6) {
   //     if(test.date === 13) {
 
 // * 요것도 해보고
@@ -108,10 +108,10 @@ function lalala () {
         //   if(lalala.month === 6) {
         //     if(lalala.date === 13) {
 
-// * 요것도 해보고
-        if(lalala.getFullYear === 2024) {
-          if(lalala.getMonth === 6) {
-            if(lalala.getDate === 13) {
+// // * 요것도 해보고
+//         if(lalala.getFullYear === 2024) {
+//           if(lalala.getMonth === 6) {
+//             if(lalala.getDate === 13) {
 
 
 // ! 모두 undefined 가 뜬닽
