@@ -57,6 +57,9 @@ function lalala () {
   
   // return [year, month+1, date];
   return {year, month, date};
+  // return {year, month +'1', date};
+  // return {year, month(+'1'), date};
+  // return {year, month(++1), date};   // * 객체 return 에서 어떻게 + 1 하지???
   
   
   //let hmm = 
@@ -97,22 +100,22 @@ function lalala () {
 
     // * 1 요것도 해보고
   if(num.getFullYear === 2024) {
-    if(num.getMonth === 6) {
+    if(num.getMonth === 5) {
       if(num.getDate === 13) {
 
   // * 2 요것도 해보고
   // if(num.year === 2024) {
-  //   if(num.month === 6) {
+  //   if(num.month === 5) {
   //     if(num.date === 13) {
 
 // * 3 요것도 해보고
         // if(lalala.year === 2024) {
-        //   if(lalala.month === 6) {
+        //   if(lalala.month === 5) {
         //     if(lalala.date === 13) {
 
 // * 4 요것도 해보고
         // if(lalala.getFullYear === 2024) {
-        //   if(lalala.getMonth === 6) {
+        //   if(lalala.getMonth === 5) {
         //     if(lalala.getDate === 13) {
 
 
