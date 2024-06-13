@@ -44,14 +44,88 @@ const container = () => {
   `;
 }
 
-// * 날짜 구하는 변수
-const now = Date.now();
-new Date(now);
+// * 날짜 구하는 함수
 
-// * 날짜 구하는 함수 만들기
-function nowDate () {
-return Date.now()
-}
 
-console.log(nowDate());
+// ! obj 타입에서 number 타입으로 바꾸기 작업 필요!
+function lalala () {
+  const today = new Date();
+  
+  const year = today.getFullYear();
+  const month = today.getMonth();
+  const date = today.getDate();
+  
+  // return [year, month+1, date];
+  return year, month, date;
+  
+  
+  //let hmm = 
+  // return new Date(year,month[date]); 
+  // return new Date(getFullYear()); 
+  //return new Date(hmm); 
+  
+  }
+  
+    // console.log("lalala()의 값은 : ", lalala());
+    // console.log("lalala의 타입은 : ", typeof lalala, "lalala의 값은 : ", lalala); // lalala의 타입은 :  function . lalala의 값은 :  [Function: lalala]
+    console.log("lalala의 타입은 : ", typeof lalala(), "lalala의 값은 : ", lalala()); // lalala의 타입은 :  number . lalala의 값은 :  13
+  
+  
+  let test = lalala();
+  
+  console.log("test의 타입은 : ", typeof test, "test 의 값은 : ", test); // test의 타입은 :  number . test 의 값은 :  13
+  // let value = Number("123");
+  
 
+  // * 얘는 해봤는데, 이미 test가 number형인데 굳이 또 number 화 시킬 필요가 없음.
+  // let num = Number(test);
+  // console.log("num 의 타입은 : ", typeof num, "num의 값은: ", num); // num 의 타입은 :  number num의 값은:  13
+  // console.log("test 의 넘버화 타입은 : ", typeof(test), "test 넘버화의 값은 : ", test);  // number
+  // console.dir(test);
+  // console.log(test);  // * 2024-06-12 + 시간 나옴
+
+  // console.log("lalala 의 타입은 : " , typeof lalala);
+  // console.log("lalala()의 타입은 : ", typeof lalala());
+  // console.log("이것은:", lalala());
+  
+  let innerFunc = () => {
+    // if(new Date(test) === 12 ) {
+    // if(test === new Date("2024-06-12")) {
+    // if(test === "2024-06-12") {
+
+    // * 요것도 해보고
+  // if(test.getFullYear === 2024) {
+  //   if(test.getMonth === 6) {
+  //     if(test.getDate === 13) {
+
+  // * 요것도 해보고
+  // if(test.year === 2024) {
+  //   if(test.month === 6) {
+  //     if(test.date === 13) {
+
+// * 요것도 해보고
+        // if(lalala.year === 2024) {
+        //   if(lalala.month === 6) {
+        //     if(lalala.date === 13) {
+
+// * 요것도 해보고
+        if(lalala.getFullYear === 2024) {
+          if(lalala.getMonth === 6) {
+            if(lalala.getDate === 13) {
+
+
+// ! 모두 undefined 가 뜬닽
+
+        return "오우 13일이구나"    
+      } else {
+        "잉 오늘 13일 아닌뎀"
+      }
+    }
+  }
+  }
+  
+  console.log("innerFunc()의 값은 : ", innerFunc()); // undefined
+  console.log("innerFunc의 값은 : ", innerFunc); // [Function: innerFunc]
+  
+  let finalTest = innerFunc(); // * innerFunc이 undefined 로 나오니까 finalTest는 걍 문자열로 나오는거겠지?,,
+  console.log("finalTest의 타입은 : ", typeof finalTest, "finalTest의 값은 : ", finalTest); // finalTest의 타입은 :  undefined . finalTest의 값은 :  undefined
