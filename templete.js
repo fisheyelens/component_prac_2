@@ -66,10 +66,9 @@ function lalala () {
   
   }
   
-  let what = lalala();
+
     // console.log("lalala()의 값은 : ", lalala());
     // console.log("lalala의 타입은 : ", typeof lalala, "lalala의 값은 : ", lalala); // lalala의 타입은 :  function . lalala의 값은 :  [Function: lalala]
-    console.log("what의 type은 : ", typeof what, "what의 값은 : ", what);
     console.log("lalala의 타입은 : ", typeof lalala(), "lalala의 값은 : ", lalala()); // lalala의 타입은 :  number . lalala의 값은 :  13
     
 
