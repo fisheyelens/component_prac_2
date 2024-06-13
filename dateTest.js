@@ -82,3 +82,4 @@ if(test[0] === 2024) {
 }
 
 console.log("inner펑션의 값은", innerFunc());
+// ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ
