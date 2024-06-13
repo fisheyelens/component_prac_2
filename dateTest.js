@@ -55,10 +55,13 @@ const today = new Date();
 
 let test = lalala();
 
-let value = Number("123");
+// let value = Number("123");
 
-let num = Number(test);
-console.log("num 의 타입은 : ", typeof num, "num의 값은: ", num);
+// let num = Number(test); 
+// * 내가 찾을거 : number [] 랑 number 차이
+
+
+// console.log("num 의 타입은 : ", typeof num, "num의 값은: ", num);
 console.log(typeof(test));  // * object 로 나온다.
 console.dir(test);
 console.log(test);  // * 2024-06-12 + 시간 나옴
@@ -81,4 +84,4 @@ if(test[0] === 2024) {
 }
 }
 
-console.log("inner펑션의 값은", innerFunc());
+console.log("innerFunc의 값은 : ", innerFunc());
