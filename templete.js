@@ -57,9 +57,11 @@ function lalala () {
   
   // return [year, month+1, date];
   return {year, month, date};
+  // * 객체 return 에서 어떻게 + 1 하지???
+  // * 배열때는 +1 잘만 됐고, 배열도 객체인데, 그럼 객체도 +1 잘 붙어야 하는거 아닌감....
   // return {year, month +'1', date};
   // return {year, month(+'1'), date};
-  // return {year, month(++1), date};   // * 객체 return 에서 어떻게 + 1 하지???
+  // return {year, month(++1), date};   
   
   
   //let hmm = 
