@@ -81,12 +81,11 @@ function lalala () {
   // let value = Number("123");
   
 
-  // * 얘는 해봤는데, 이미 test가 number형인데 굳이 또 number 화 시킬 필요가 없음.
-  let num = Number(test);
+  let num = Number(test); // *  test가 year,month,date 날짜(숫자)를 담고 있는 객체라서 넘버화 가능?
   // console.log("num 의 타입은 : ", typeof num, "num의 값은: ", num); // num 의 타입은 :  number num의 값은:  13
   // console.log("test 의 넘버화 타입은 : ", typeof(test), "test 넘버화의 값은 : ", test);  // number
   // console.dir(test);
-  // console.log(test);  // * 2024-06-12 + 시간 나옴
+  // console.log(test); 
 
   // console.log("lalala 의 타입은 : " , typeof lalala);
   // console.log("lalala()의 타입은 : ", typeof lalala());
@@ -98,14 +97,14 @@ function lalala () {
     // if(test === "2024-06-12") {
 
     // * 1 요것도 해보고
-  // if(num.getFullYear === 2024) {
-  //   if(num.getMonth === 6) {
-  //     if(num.getDate === 13) {
+  if(num.getFullYear === 2024) {
+    if(num.getMonth === 6) {
+      if(num.getDate === 13) {
 
   // * 2 요것도 해보고
-  if(num.year === 2024) {
-    if(num.month === 6) {
-      if(num.date === 13) {
+  // if(num.year === 2024) {
+  //   if(num.month === 6) {
+  //     if(num.date === 13) {
 
 // * 3 요것도 해보고
         // if(lalala.year === 2024) {
